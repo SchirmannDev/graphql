@@ -1,0 +1,13 @@
+enum TypeProfile {
+  ADMIN
+  USER
+}
+
+type Profile {
+  id: Int
+  description: TypeProfile
+}
+
+type Query {
+  profile: [Profile]
+}
